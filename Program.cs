@@ -97,3 +97,62 @@ if(num > 1)
     }
 }
 */
+/*Task 7: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+
+456 -> 5
+782 -> 8
+918 -> 1
+*/
+/*
+Console.Clear();
+Console.Write("Enter a three-digit number: ");
+int threeDigitNumber = Convert.ToInt32(Console.ReadLine());
+string stringNumber = Convert.ToString(threeDigitNumber);
+Console.WriteLine("the second digit of this number -> "+stringNumber[1]);
+*/
+/*
+Task 8: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+645 -> 5
+
+78 -> третьей цифры нет
+
+32679 -> 6 
+*/
+/*
+Console.Write("Enter a number: ");
+int anyNumber = Convert.ToInt32(Console.ReadLine());
+string anyNumberText = Convert.ToString(anyNumber);
+if (anyNumberText.Length > 2){
+  Console.WriteLine("third digit -> " + anyNumberText[2]);
+}
+else {
+  Console.WriteLine("-> no third digit");
+}
+*/
+/*
+Task 9: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+6 -> да
+7 -> да
+1 -> нет
+*/
+/*
+Console.Write("Enter a number for the day of the week: ");
+int dayNumber = Convert.ToInt32(Console.ReadLine());
+
+void CheckingTheDayOfTheWeek (int dayNumber) 
+{
+  if (dayNumber == 6 || dayNumber == 7) {
+  Console.WriteLine("( выходной) -> да");
+  }
+  else if (dayNumber < 1 || dayNumber > 7)
+   {
+    Console.WriteLine("это число ,а не день недели");
+  }
+  else 
+  Console.WriteLine("( рабочий день) -> нет");
+}
+
+CheckingTheDayOfTheWeek(dayNumber);
+*/
