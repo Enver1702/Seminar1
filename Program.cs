@@ -156,3 +156,100 @@ void CheckingTheDayOfTheWeek (int dayNumber)
 
 CheckingTheDayOfTheWeek(dayNumber);
 */
+/* Task 10.Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+
+14212 -> нет
+
+12821 -> да
+
+23432 -> да
+*/
+/*
+Console.Clear();
+Console.Write("Enter a five-digit number: ");
+string number = Console.ReadLine();
+
+void CheckingNumber(string number)
+{
+  if (number[0]==number[4] || number[1]==number[3])
+  {
+    Console.WriteLine($"your number: {number} - palindrome.");
+  }
+  else 
+  Console.WriteLine($"your number: {number} - not a palindrome.");
+}
+
+if (number!.Length == 5)
+{
+  CheckingNumber(number);
+}
+else 
+Console.WriteLine($"Enter the correct number");
+*/
+/* Task 11. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+A (3,6,8); B (2,1,-7), -> 15.84
+
+A (7,-5, 0); B (1,-1,9) -> 11.53
+*/
+/*
+int a1 = Coordinate("a", "1");
+int b1 = Coordinate("b", "1");
+int c1 = Coordinate("c", "1");
+int a2 = Coordinate("a", "2");
+int b2 = Coordinate("b", "2");
+int c2 = Coordinate("c", "2");
+
+int Coordinate(string coorName, string pointName)
+{
+    Console.Write($"Enter coordinate {coorName} points {pointName}: ");
+    return Convert.ToInt16(Console.ReadLine());
+}
+
+double Decision(double a1, double a2, 
+                double b1, double b2, 
+                double c1, double c2)
+                {
+  return Math.Sqrt(Math.Pow((a2-a1), 2) + 
+                   Math.Pow((b2-b1), 2) + 
+                   Math.Pow((c2-c1), 2));
+}
+
+double segmentLength =  Math.Round (Decision(a1, a2, b1, b2, c1, c2), 2 );
+
+Console.WriteLine($"Cut length  {segmentLength}"); 
+*/
+/* Task 12. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+3 -> 1, 8, 27
+5 -> 1, 8, 27, 64, 125
+*/
+/*
+Console.Write("Enter number: ");
+int cube = Convert.ToInt32(Console.ReadLine());
+
+void Cube(int[] cube)
+{
+  int counter = 0;
+  int length = cube.Length;
+  while (counter <  length){
+    cube[counter] = Convert.ToInt32(Math.Pow(counter, 3));
+    counter++;
+  }
+}
+
+void PrintArry(int[] coll)
+{
+  int count = coll.Length;
+  int index = 0;
+  while(index < count)
+  {
+    Console.Write(coll[index]+ " ");
+    index++;
+  }
+} 
+
+int[] arry = new int[cube+1];
+Cube(arry);
+PrintArry(arry);
+*/
