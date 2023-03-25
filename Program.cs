@@ -315,7 +315,7 @@ Task 15: Напишите программу, которая задаёт мас
 
 6, 1, 33 -> [6, 1, 33]
 */
-/*]=0op0
+/*
 Console.Write("Enter a series of numbers separated by a comma: ");
 string? seriesOfNumbers = Console.ReadLine();
 
